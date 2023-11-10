@@ -1,0 +1,83 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    padding-inline: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #9993;
+    width: 100%;
+    min-height: 5rem;
+    cursor: pointer;
+    transition: box-shadow ease-in 100ms;
+    text-decoration: none;
+}
+
+.card__title {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.card__title h3 {
+    text-decoration: underline;
+}
+
+.card__preview {
+    line-height: 1.2;
+    max-width: 60rem;
+}
+
+.card__tags {
+    font-family: "JetBrains Mono", sans-serif;
+    display: flex;
+    gap: 0.5rem;
+    color: dimgray;
+}
+
+.card:is(:hover, :focus, :focus-visible) {
+    box-shadow: 0 0 1rem #9999;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 4rem;
+    margin-inline: auto;
+    max-width: 90ch;
+    min-height: 100vh;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 3rem;
+    gap: 2rem;
+}
+
+.article__tags {
+    display: flex;
+    align-items: baseline;
+    margin-block-start: 0.5rem;
+    gap: 0.5rem;
+    font-family: "JetBrains Mono", sans-serif;
+    color: dimgray;
+}
+
+.article__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.article__body h1,
+.article__body h2,
+.article__body h3,
+.article__body h4,
+.article__body h5,
+.article__body h6 {
+    font-family: "JetBrains Mono", sans-serif;
+    margin-block-start: 1.5rem;
+}
+

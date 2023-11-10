@@ -1,0 +1,43 @@
+.header {
+    margin-inline: auto;
+    padding: 1rem;
+    padding-inline: 3rem;
+    max-width: var(--max-width);
+}
+
+.header h2 {
+    font-size: 1.5em;
+    margin-inline-end: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    margin-inline: 1rem;
+}
+
+.footer {
+    margin-block-start: auto;
+    top: auto;
+    bottom: 0;
+}
+
+.footer__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    max-width: var(--max-width);
+    margin-inline: auto;
+}
+
+.copyright {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
